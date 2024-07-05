@@ -1,6 +1,7 @@
 import React from "react";
 import { CONTACT } from "../constants";
 import { motion } from "framer-motion";
+import GitHubButton from 'react-github-btn'
 
 const Contact = () => {
   return (
@@ -13,7 +14,7 @@ const Contact = () => {
       >
         Get in Touch
       </motion.h1>
-      <div className="text-center tracking-tighter">
+      <div className="text-center">
         <motion.p
           whileInView={{ opacity: 1, x: 0 }}
           initial={{ opacity: 0, x: -100 }}
@@ -38,6 +39,12 @@ const Contact = () => {
         >
           {CONTACT.email}
         </a>
+      </div>
+      <div className="
+      flex justify-center mt-10 
+      ">
+         {/* <!-- Place this tag where you want the button to render. --> */}
+         <GitHubButton href="https://github.com/dhruvp66572" data-color-scheme="no-preference: light; light: light; dark: light;" data-size="large" aria-label="Follow @dhruvp66572 on GitHub">Follow @dhruvp66572</GitHubButton>
       </div>
     </div>
   );

@@ -1,6 +1,6 @@
 import React from "react";
 import { HERO_CONTENT } from "../constants/index";
-import profilePic from "../assets/kevinRushProfile.png";
+import profilePic from "../assets/DPProfile.jpeg";
 import { motion } from "framer-motion";
 
 const containerVariants = (delay) => {
@@ -46,7 +46,7 @@ const Hero = () => {
               variants={containerVariants(1)}
               initial="hidden"
               animate="visible"
-              className="my-2 max-w-xl py-6 font-light tracking-tighter"
+              className="my-2 max-w-xl py-6 font-light text-justify"
             >
               {HERO_CONTENT}
             </motion.p>
@@ -55,10 +55,13 @@ const Hero = () => {
         <div className="w-full lg:w-1/2 lg:p-8">
           <div className="flex justify-center">
             <motion.img
-                initial={{ x:100,opacity: 0 }}
-                animate={{x:0,opacity: 1}}
-                transition={{delay: 1.2,duration: 1}}
-            src={profilePic} alt="" />
+              initial={{ x: 100, opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              transition={{ delay: 1.2, duration: 1 }}
+              className="rounded-lg w-72 h-72 lg:w-96 lg:h-96 object-cover shadow-2xl "
+              src={profilePic}
+              alt=""
+            />
           </div>
         </div>
       </div>

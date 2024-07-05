@@ -7,7 +7,7 @@ const Navbar = () => {
     <nav className="mb-20 flex items-center justify-between py-6">
       <div className="flex flex-shrink-0 items-center">
         {/* <img className="mx-2 w-10" src={logo} alt="" /> */}
-        <h1 className="text-3xl font-bold font-sans ">DP</h1>
+        <h1 className="text-3xl font-bold font-sans cursor-pointer">DP</h1>
       </div>
       <div className="m-8 flex items-center justify-center gap-4 text-2xl">
         <FaLinkedin
@@ -30,6 +30,7 @@ const Navbar = () => {
           className="cursor-pointer hover:text-[#C13584] transition-all duration-300 ease-in-out"
           onClick={() => window.open("https://www.instagram.com/dp__572/")}
         />
+       
       </div>
     </nav>
   );
