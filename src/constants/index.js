@@ -1,76 +1,116 @@
 import project1 from "../assets/projects/project-1.png";
 import project2 from "../assets/projects/project-2.png";
-// import project3 from "../assets/projects/project-3.jpg";
-// import project4 from "../assets/projects/project-4.jpg";
+import project3 from "../assets/projects/project-1.png";
+import project4 from "../assets/projects/project-1.png";
+import project5 from "../assets/projects/project-1.png";
+import project6 from "../assets/projects/project-1.png";
 
-export const HERO_CONTENT = `I am a passionate full stack developer with a knack for crafting robust and scalable web applications. With 5 years of hands-on experience, I have honed my skills in front-end technologies like React and Next.js, as well as back-end technologies like Node.js, MySQL, and MongoDB. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.`;
+export const HERO_CONTENT = `I am a passionate full stack developer with a knack for crafting robust and scalable web applications. With hands-on experience, I have honed my skills in front-end technologies like React.js and Tailwind CSS, as well as back-end technologies like Node.js, Express.js, and MongoDB. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.`;
 
-export const ABOUT_TEXT = `I am a dedicated and versatile full stack developer with a passion for creating efficient and user-friendly web applications. With 5 years of professional experience, I have worked with a variety of technologies, including React, Next.js, Node.js, MySQL, and MongoDB. My journey in web development began with a deep curiosity for how things work, and it has evolved into a career where I continuously strive to learn and adapt to new challenges. I thrive in collaborative environments and enjoy solving complex problems to deliver high-quality solutions. Outside of coding, I enjoy staying active, exploring new technologies, and contributing to open-source projects.`;
+export const ABOUT_TEXT = `I am a dedicated and versatile full stack developer with a passion for creating efficient and user-friendly web applications. I have worked with a variety of technologies, including React.js, Node.js, Tailwind CSS, and MongoDB. My journey in web development began with a deep curiosity for how things work, and it has evolved into a career where I continuously strive to learn and adapt to new challenges. I thrive in collaborative environments and enjoy solving complex problems to deliver high-quality solutions. Outside of coding, I enjoy exploring new technologies and contributing to open-source projects.`;
 
 export const EXPERIENCES = [
-  // {
-  //   year: "2023 - Present",
-  //   role: "Senior Full Stack Developer",
-  //   company: "Google Inc.",
-  //   description: `Led a team in developing and maintaining web applications using JavaScript, React.js, and Node.js. Implemented RESTful APIs and integrated with MongoDB databases. Collaborated with stakeholders to define project requirements and timelines.`,
-  //   technologies: ["Javascript", "React.js", "Next.js", "mongoDB"],
-  // },
-  // {
-  //   year: "2022 - 2023",
-  //   role: "Frontend Developer",
-  //   company: "Adobe",
-  //   description: `Designed and developed user interfaces for web applications using Next.js and React. Worked closely with backend developers to integrate frontend components with Node.js APIs. Implemented responsive designs and optimized frontend performance.`,
-  //   technologies: ["HTML", "CSS", "Vue.js", "mySQL"],
-  // },
-  // {
-  //   year: "2021 - 2022",
-  //   role: "Full Stack Developer",
-  //   company: "Facebook",
-  //   description: `Developed and maintained web applications using JavaScript, React.js, and Node.js. Designed and implemented RESTful APIs for data communication. Collaborated with cross-functional teams to deliver high-quality software products on schedule.`,
-  //   technologies: ["Python", "Svelte", "Three.js", "Postgres"],
-  // },
-  // {
-  //   year: "2020 - 2021",
-  //   role: "Software Engineer",
-  //   company: "Paypal",
-  //   description: `Contributed to the development of web applications using JavaScript, React.js, and Node.js. Managed databases and implemented data storage solutions using MongoDB. Worked closely with product managers to prioritize features and enhancements.`,
-  //   technologies: ["Ruby", "Rails", "PHP", "Sqlite"],
-  // },
+  {
+    year: "2024 - Present",
+    role: "Full Stack Developer",
+    company: "Freelance",
+    description: `Worked on multiple projects like 'paani wale', a water supply management system, and 'EduProjectLog', a portal for managing educational projects. Developed full-stack solutions using React.js, Node.js, and MongoDB, with an emphasis on responsive design and scalable architectures.`,
+    technologies: ["React.js", "Node.js", "MongoDB", "Tailwind CSS"],
+  },
+  {
+    year: "2024",
+    role: "Intern - Web Development",
+    company: "Evansh Services",
+    description: `Completed a web development internship with a focus on front-end and back-end technologies such as React.js, HTML, CSS, and Git. Contributed to building interactive and optimized web applications.`,
+    technologies: ["React.js", "HTML", "CSS", "Git"],
+  },
 ];
 
 export const PROJECTS = [
   {
-    title: "E-Commerce Website",
-    image: project1,
+    title: "Paani Wale",
+    image: "https://res.cloudinary.com/dbdydwgys/image/upload/v1728750646/paniwalalogo_iku3nc.png",
     description:
-      "A fully functional e-commerce website with features like product listing, shopping cart, and user authentication.",
-    technologies: ["HTML", "CSS", "Asp.net", "Vb.net", "Sql Server"],
+      "A web application designed for shop owners to manage monthly water bottle supplies, track bottle holdings, send invoices, and monitor revenue and profit.",
+    technologies: ["React", "Node.js", "MongoDB", "Tailwind CSS"],
+    github: "",
+    live: "https://paaniwale.com/",
   },
   {
-    title: "New App",
+    title: "Daily_Samachar",
     image: project2,
     description:
-      "An application for displaying daily news articles, with features like search, filter.",
-    technologies: ["HTML", "CSS", "React", "Bootstrap"],
+      "A React-based news app that displays top headlines from various countries. Features include news filtering by country and live news updates.",
+    technologies: ["React", "Bootstrap", "Context API", "API integration"],
+    // github: "https://github.com/dhruvp66572/Daily_Samachar",
+    live: "fdg",
   },
-  // {
-  //   title: "Portfolio Website",
-  //   image: project3,
-  //   description:
-  //     "A personal portfolio website showcasing projects, skills, and contact information.",
-  //   technologies: ["HTML", "CSS", "React", "Bootstrap"],
-  // },
-  // {
-  //   title: "Blogging Platform",
-  //   image: project4,
-  //   description:
-  //     "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
-  //   technologies: ["HTML", "CSS", "Vue.js", "Express", "mySQL"],
-  // },
+  {
+    title: "EduProjectLog",
+    image: "https://res.cloudinary.com/dbdydwgys/image/upload/v1728750721/EduProjectLog_p0jhix.png",
+    description:
+      "A project management portal for educators to add, view, search, and filter student projects, with file upload capabilities and category-based filtering.",
+    technologies: ["React", "Node.js", "MongoDB", "Cloudinary", "MUI"],
+    // github: "https://github.com/dhruvp66572/EduProject_Frontend",
+  },
+  {
+    title: "E-Commerce Website",
+    image: project4,
+    description:
+      "A fully functional e-commerce website with features like product listing, shopping cart, and user authentication.",
+    technologies: ["HTML", "CSS", "Asp.net", "Vb.net", "SQL Server"],
+  },
+  {
+    title: "Portfolio Website",
+    image: "https://res.cloudinary.com/dbdydwgys/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1728750816/DPProfile_dcloav.jpg",
+    description:
+      "A personal portfolio website showcasing projects, skills, and contact information.",
+    technologies: ["React", "Tailwind CSS", "JavaScript"],
+    // github: "https://github.com/dhruvp66572/My-Portfolio",
+    live: "https://dhruvprajapati.vercel.app/",
+  },
+  {
+    title: "Inotebook App",
+    image: "https://res.cloudinary.com/dbdydwgys/image/upload/v1728751604/notes_slkqzm.png",
+    description:
+      "A note-taking web application that allows users to create, edit, and delete notes, with a responsive design and API integration.",
+    technologies: ["React", "Node.js", "MongoDB", "Tailwind CSS"],
+    // github: "https://github.com/dhruvp66572/inotebook",
+  },
+  {
+    title: "Surya Motors Website",
+    image: "https://res.cloudinary.com/dbdydwgys/image/upload/v1728751992/surya_motors_mv0brf.png",
+    description:
+      "A website for a car dealership that displays car listings, allows users to book test drives, and provides contact information.",
+    technologies: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Bootstrap",
+      "Asp.net",
+      "Vb.net",
+      "SQL Server",
+    ],
+    // github: "https://github.com/dhruvp66572/Surya_Motors",
+    live: "http://suryamotors.somee.com/index.aspx",
+  },
+
+  {
+    title: "Music_Player Desktop App",
+    image: "https://res.cloudinary.com/dbdydwgys/image/upload/t_music_player/v1728752144/dummayimg_r5rivv.png",
+        description:
+      "A desktop application that allows users to play music files, and customize the player interface.",
+    technologies: ["Vb.net"],
+  },
 ];
 
 export const CONTACT = {
-  address: "279-B New Anjar Chakrava Nagarpalika colony (Anjar-Kutch) 370110 Gujarat, India",
+  address:
+    "279-B New Anjar Chakrava Nagarpalika colony (Anjar-Kutch) 370110 Gujarat, India",
   phoneNo: "+91 9909066572",
   email: "dhruvprajapti66572@gmail.com",
+  linkedIn: "https://www.linkedin.com/in/dhruv-prajapati-088721260",
+  github: "https://github.com/dhruvp66572",
+  twitter: "https://twitter.com/dhruv_p_572",
+  instagram: "https://instagram.com/dp__572",
 };

@@ -1,13 +1,10 @@
-import React from "react";
 import Navbar from "./Components/Navbar";
-import Hero from "./Components/Hero";
-import About from "./Components/About";
-import Technologies from "./Components/Technologies";
-import Experience from "./Components/Experience";
 import Projects from "./Components/Projects";
 import Contact from "./Components/Contact";
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/react';
+import Landing from "./Components/Landing";
+import { Route, Routes } from "react-router-dom";
 
 const App = () => {
   return (
@@ -17,11 +14,11 @@ const App = () => {
       </div>
       <div className="container mx-auto px-8">
         <Navbar />
-        <Hero />
-        <About />
-        <Technologies />
-        {/* <Experience /> */}
-        <Projects />
+        <Routes>
+          <Route path="/" element={<Landing />} />
+          <Route path="/projects" element={<Projects count={null} enable={true}/>} />
+        </Routes>
+      
         <Contact />
         <Analytics />
         <SpeedInsights />

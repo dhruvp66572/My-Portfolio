@@ -1,6 +1,4 @@
-import React from "react";
 import { HERO_CONTENT } from "../constants/index";
-import profilePic from "../assets/DPProfile.jpeg";
 import { motion } from "framer-motion";
 
 const containerVariants = (delay) => {
@@ -59,7 +57,7 @@ const Hero = () => {
               animate={{ x: 0, opacity: 1 }}
               transition={{ delay: 1.2, duration: 1 }}
               className="rounded-lg w-72 h-72 lg:w-96 lg:h-96 object-cover shadow-2xl "
-              src={profilePic}
+              src={"https://res.cloudinary.com/dbdydwgys/image/upload/v1728750816/DPProfile_dcloav.jpg"}
               alt=""
             />
           </div>
