@@ -1,11 +1,18 @@
 import { PROJECTS } from "../constants";
 import { motion } from "framer-motion";
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 
 const Projects = ({ count, enable }) => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+
   if (count === null) {
     count = PROJECTS.length;
-  }
+  } 
 
   const projects = PROJECTS.slice(0, count);
 

@@ -1,9 +1,3 @@
-import project1 from "../assets/projects/project-1.png";
-import project2 from "../assets/projects/project-2.png";
-import project3 from "../assets/projects/project-1.png";
-import project4 from "../assets/projects/project-1.png";
-import project5 from "../assets/projects/project-1.png";
-import project6 from "../assets/projects/project-1.png";
 
 export const HERO_CONTENT = `I am a passionate full stack developer with a knack for crafting robust and scalable web applications. With hands-on experience, I have honed my skills in front-end technologies like React.js and Tailwind CSS, as well as back-end technologies like Node.js, Express.js, and MongoDB. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.`;
 
@@ -38,7 +32,7 @@ export const PROJECTS = [
   },
   {
     title: "Daily_Samachar",
-    image: project2,
+    image: "https://res.cloudinary.com/dbdydwgys/image/upload/v1728752697/project-2_uwgof1.png",
     description:
       "A React-based news app that displays top headlines from various countries. Features include news filtering by country and live news updates.",
     technologies: ["React", "Bootstrap", "Context API", "API integration"],
@@ -55,7 +49,7 @@ export const PROJECTS = [
   },
   {
     title: "E-Commerce Website",
-    image: project4,
+    image: "https://res.cloudinary.com/dbdydwgys/image/upload/v1728752704/project-1_qbunkp.png",
     description:
       "A fully functional e-commerce website with features like product listing, shopping cart, and user authentication.",
     technologies: ["HTML", "CSS", "Asp.net", "Vb.net", "SQL Server"],

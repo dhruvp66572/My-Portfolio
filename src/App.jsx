@@ -5,6 +5,7 @@ import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/react';
 import Landing from "./Components/Landing";
 import { Route, Routes } from "react-router-dom";
+import ScrollToTop from "./Components/ScrollToTop";
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
       </div>
       <div className="container mx-auto px-8">
         <Navbar />
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Landing />} />
           <Route path="/projects" element={<Projects count={null} enable={true}/>} />
